@@ -1,0 +1,346 @@
+html {
+  font-family: 'poppins', verdana;
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px 5%;
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.4);
+}
+
+header div {
+  flex-grow: 1;
+}
+
+header div img {
+  width: clamp(3.75rem, -4.0385rem + 25.9615vw, 12.1875rem);
+}
+
+header ul {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+header li {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  padding-left: 2%;
+  font-weight: bolder;
+  font-size: clamp(0.5rem, 0.2291rem + 0.9029vw, 1rem);
+}
+
+header li:first-child {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.section1 {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  margin: 50px 5px;
+  gap: 20px;
+  color: white;
+  grid-template-areas: "hexashop women men"
+    "hexashop kids accessory";
+}
+
+.section1 img {
+  width: 100%;
+  height: 100%;
+}
+
+.section1 p {
+  color: white;
+  font-size: clamp(0.5rem, 0.2918rem + 0.6938vw, 1rem);
+}
+
+.section1 .hexashop .description {
+  position: absolute;
+  top: 35%;
+  left: 10%;
+  text-align: start;
+}
+
+.section1 .description {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  top: 25%;
+}
+
+.section1 .hexashop {
+  position: relative;
+  grid-area: hexashop;
+}
+
+.section1 .women {
+  position: relative;
+  grid-area: women;
+}
+
+.section1 .men {
+  grid-area: men;
+  position: relative;
+}
+
+.section1 .kids {
+  grid-area: kids;
+  position: relative;
+}
+
+.section1 .accessory {
+  grid-area: accessory;
+  position: relative;
+}
+
+.section1 button {
+  background: none;
+  padding: 10px;
+  border: 1px solid white;
+  color: white;
+}
+
+.section1 h1,
+.section1 h2 {
+  font-size: clamp(0.5rem, -0.3126rem + 2.7088vw, 2rem);
+}
+
+main section {
+  position: relative;
+  border-top: 1px dashed rgba(0, 0, 0, 0.4);
+  padding-left: 7.5%;
+}
+
+main .flex {
+  display: flex;
+  gap: 2%;
+}
+
+main .flex .cont {
+  width: 29%;
+}
+
+main .flex .cont .produit {
+  width: 100%;
+}
+
+main .rel {
+  position: relative;
+}
+
+main .rel img {
+  width: clamp(3.125rem, 1.824rem + 4.3365vw, 6.25rem);
+  position: absolute;
+  right: 0;
+}
+
+.pre,
+.next {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+}
+
+.pre {
+  top: 50%;
+  left: 0;
+  border: 2px solid rgba(0, 0, 0, 0.3);
+}
+
+.next {
+  top: 50%;
+  right: 0;
+  border: 2px solid rgba(0, 0, 0, 0.3);
+}
+
+main p {
+  color: rgba(0, 0, 0, 0.4);
+  font-style: italic;
+  font-size: 0.8em;
+}
+
+main div p,
+main div h3 {
+  font-style: normal;
+  font-size: clamp(0.6rem, 0.4335rem + 0.5551vw, 1rem);
+}
+
+.section2 {
+  display: flex;
+  padding: 2% 7.5%;
+  gap: 50px;
+  border-top: 1px dashed rgba(0, 0, 0, 0.4);
+}
+
+.section2 .cont {
+  margin: 50px 5px;
+  width: 50%;
+}
+
+.section2 img {
+  width: 100%;
+  height: 100%;
+}
+
+.section2 .span {
+  display: flex;
+  height: 60px;
+}
+
+.section2 .span p {
+  color: black;
+  display: inline;
+}
+
+.section2 .span span {
+  width: 50px;
+  font-size: 80px;
+}
+
+.section2 a {
+  text-decoration: none;
+}
+
+.section2 button {
+  background: none;
+  padding: 10px;
+  border: 1px solid black;
+  color: black;
+}
+
+.section2 .c2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 20px;
+}
+
+.section2 .bag {
+  background-color: rgba(0, 0, 0, 0.05);
+  text-align: center;
+  width: 100%;
+}
+
+.section2 .bag h3 {
+  position: relative;
+  top: 30%;
+}
+
+.section2 p {
+  color: rgba(0, 0, 0, 0.4);
+  font-size: clamp(0.5rem, 0.3751rem + 0.4163vw, 0.8rem);
+}
+
+.section2 .bag p {
+  font-style: italic;
+  position: relative;
+  top: 30%;
+}
+
+.section2 h2,
+.section2 h3 {
+  font-size: clamp(0.5rem, 0.2918rem + 0.6938vw, 1rem);
+}
+
+.section3 {
+  padding: 2% 7.5% 5%;
+  border-top: 1px dashed rgba(0, 0, 0, 0.4);
+}
+
+.section3 .flex {
+  display: flex;
+}
+
+.section3 .flex img {
+  width: 16.7%;
+}
+
+.section3 p {
+  font-size: 0.8em;
+  color: rgba(0, 0, 0, 0.4);
+  font-style: italic;
+}
+
+.section4 .flex {
+  display: flex;
+  padding: 2% 7.5%;
+  gap: 50px;
+  border-top: 1px dashed rgba(0, 0, 0, 0.4);
+}
+
+.section4 .flex form,
+.section4 .flex .cont {
+  width: 50%;
+  margin: 50px 5px;
+}
+
+.section4 .flex .cont {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.section4 .flex form input {
+  padding: 2%;
+  width: 40%;
+}
+
+.section4 button {
+  width: 50px;
+  height: 50px;
+  margin: 0;
+  padding: 0;
+}
+
+.section4 .form {
+  display: flex;
+  flex-grow: 1;
+  gap: 20px;
+  width: 100%;
+  height: 40px;
+}
+
+.section4 p {
+  color: rgba(0, 0, 0, 0.4);
+  font-size: 0.8em;
+  font-weight: 100;
+  margin-top: 0;
+}
+
+.section4 h4 {
+  margin-bottom: 0;
+}
+
+footer {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  font-size: 0.7em;
+  padding: 50px 10%;
+}
+
+footer p {
+  font-weight: 100;
+}
+
+footer .grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+  padding-bottom: 50px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+footer .signature {
+  text-align: center;
+}
+
+footer svg {
+  margin: 20px;
+}
